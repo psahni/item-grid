@@ -1,0 +1,9 @@
+
+
+<% @products.each_with_index do |product, index|%>
+	<div class="<%=(index%3==0) ? 'row': ''%>">
+		<div class='col-md-3'>
+			<%=product.name%>
+		</div>
+	</div>
+<% end %>
