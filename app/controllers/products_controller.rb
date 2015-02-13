@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
 
 
 	def index
-		@products = Product.all[0..11]
+		@products = Product.all
 	end
 
 	def show
