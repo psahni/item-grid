@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require qtip/qtip.min.js
+//= require qtip/imagesloaded.pkg.min.js
 //= require_tree .

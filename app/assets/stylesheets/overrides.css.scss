@@ -8,9 +8,62 @@ body {
 
 .show-grid{
 	margin-bottom: 30px;
-	div{
-		border: 1px solid;
-		padding: 10px;
+	.product-wrap{
+		padding: 30px 20px;
 		margin-left: 15px;
 	}
+}
+
+header{
+	margin-bottom: 30px;
+}
+
+.addcart{
+	margin-top: 20px;
+}
+
+
+body{
+    padding: 50px;
+}
+
+
+/* qtip design css */
+.qtip-wiki{
+	font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #eee;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-top: 50px;
+    max-width: 400px;
+    .title{
+    	font-size: 25px;
+    	font-weight: 700;
+    	padding: 10px 0px;
+    }
+}
+
+.qtip-wiki p{
+    margin: 0 0 6px;
+}
+
+.qtip-wiki h1{
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 0 0 5px;
+}
+
+.qtip-wiki img{
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+.qtip-wiki .info{
+    overflow: hidden;
+}
+
+.qtip-wiki p.note{
+    font-weight: 700;
 }
