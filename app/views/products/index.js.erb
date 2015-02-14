@@ -1,0 +1,4 @@
+$('#products-listing').html("<%=escape_javascript(render :partial => 'product', :object => @products)%>");
+$(".loader").hide();
+$('#products-listing').removeClass('overlay');
+callqTip();

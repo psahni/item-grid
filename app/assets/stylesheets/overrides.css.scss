@@ -67,3 +67,18 @@ body{
 .qtip-wiki p.note{
     font-weight: 700;
 }
+
+/* loader*/
+
+.loader{
+    display:none;
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    z-index: 9999;
+}
+
+.overlay{
+    opacity: 0.4;
+    z-index: -1;
+}

@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require qtip/qtip.min.js
 //= require qtip/imagesloaded.pkg.min.js
+//= require qtip
 //= require_tree .
