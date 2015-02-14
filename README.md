@@ -1,7 +1,3 @@
-# Pagination for [Twitter Bootstrap 3](http://getbootstrap.com/components/#pagination)
+# READ ME
 
-With support for:
-
-- erb
-- haml
-- slim
+<img src='https://raw.githubusercontent.com/psahni/item-grid/master/public/screenshot.png' />
