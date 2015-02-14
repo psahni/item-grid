@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
 
 	def scroll
 		if 	params[:offset].to_i
-			sleep 5
+			sleep 1						# => JUST TO SHOW LOADER. THIS LINE IS NOT NEEDED
 			@products = Product.limit(Product::PER_PAGE).offset(params[:offset].to_i)
 			render :partial => 'products/product', :object => @products if request.xhr?
 		end

@@ -29,6 +29,9 @@ body{
 
 
 /* qtip design css */
+.qtip{
+    direction: rtl !important;
+}
 .qtip-wiki{
 	font-family: 'Open Sans';
     font-size: 14px;
@@ -88,4 +91,9 @@ body{
     left: 500px;
     bottom: 30px;
     display: none;
+}
+
+.idn{
+    font-size: 11px;
+    padding-left: 25px;
 }

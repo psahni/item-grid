@@ -1,9 +1,8 @@
 var current_page = 0;
 $(window).scroll(function(){
-	console.log(endOfPage());
     if(endOfPage()){
           //alert("This is end of the document");       
-          current_page = current_page + 1;
+         current_page = current_page + 1;
          loadContent(current_page);
     }
 }); 
