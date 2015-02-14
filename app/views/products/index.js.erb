@@ -1,4 +1,5 @@
 $('#products-listing').html("<%=escape_javascript(render :partial => 'product', :object => @products)%>");
 $(".loader").hide();
 $('#products-listing').removeClass('overlay');
+$('#pagination-links').html("<%=escape_javascript(paginate @products, :remote => true)%>")
 callqTip();

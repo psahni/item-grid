@@ -15,4 +15,5 @@
 //= require qtip/qtip.min.js
 //= require qtip/imagesloaded.pkg.min.js
 //= require qtip
+//= require site
 //= require_tree .

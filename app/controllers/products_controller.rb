@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
 
 
 	def index
-		@products = Product.page(params[:page])		
+		@products = Product.page(params[:page]).per(Product::PER_PAGE)
 		respond_to do |format|
 			format.js{
 				sleep 0.5                   # => JUST TO SHOW LOADER. THIS LINE IS NOT NEEDED
