@@ -1,3 +1,5 @@
+<%=javascript_tag "var PER_PAGE = #{Product::PER_PAGE}"%>
+
 <div class='col-md-12' id='pagination-links' style='margin-bottom:30px;'>
 	<%= paginate @products, :remote => true %>
 </div>
@@ -9,4 +11,8 @@
 
 <div class='col-md-12' id='products-listing'>
 	<%=render :partial => 'product', :object => @products%>
+</div>
+
+<div id='page-scroll-loader'>
+	<h4>Loading more data....</h4>
 </div>

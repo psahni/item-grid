@@ -13,11 +13,21 @@ class ProductsController < ApplicationController
 
 	def show
 		product = Product.find(params[:id])
-		sleep 0.5                   # => JUST TO SHOW LOADER. THIS LINE IS NOT NEEDED
 		respond_to do |format|
 			format.json{ 		
+				sleep 0.5                   # => JUST TO SHOW LOADER. THIS LINE IS NOT NEEDED
 				render :json => product.to_json
 			}
 		end
 	end
+
+	def scroll
+		if 	params[:offset].to_i
+			sleep 5
+			@products = Product.limit(Product::PER_PAGE).offset(params[:offset].to_i)
+			render :partial => 'products/product', :object => @products if request.xhr?
+		end
+	end
+
 end
+
