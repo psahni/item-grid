@@ -1,7 +1,8 @@
+window.current_page = 0;
 $(window).scroll(function(){
     if(endOfPage()){
           //alert("This is end of the document");       
-         current_page = $("li.active a").text() || 1;
+         current_page = (window.current_page == 0) ? $("li.active a").text() : window.current_page;
          loadContent(parseInt(current_page));
     }
 }); 
@@ -13,8 +14,9 @@ var loadContent = function(current_page){
 	$.get('/products/scroll?offset=' + String(offset)).then(function(response){
 		$("#products-listing").append(response);
 		$("#page-scroll-loader").hide();
+		window.current_page++;
 		var current_position = $(window).scrollTop();
-		 $(window).scrollTop(current_position+75);
+		$(window).scrollTop(current_position+75);
 	});
 }
 
